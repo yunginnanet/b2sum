@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-const kayos = `a2F5b3MKeGoC90IBWQPGxv2FJVLScpEvR0DhWEdhiobiF/cfVBnSXhAxr+5YUxOJZESTTrBLkDpoWxRIt1XVb3Aa/pvizg==`
+const kayos = `Kr+6ONDx+cq/WvhHpQE/4LVuJYi9QHz1TztHNTWwa9KJWqHxfTNLKF3YxrcLptA3wO0KHm83Lq7gpBWgCQzPag==`
 
 func TestC264(t *testing.T) {
 	soyak := C264(strings.NewReader("kayos\n"))

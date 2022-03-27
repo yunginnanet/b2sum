@@ -12,9 +12,10 @@ import (
 func C264(i io.Reader) string {
 	hashr, _ := blake2b.New(64, nil)
 	cytes, err := io.ReadAll(i)
+	hashr.Write(cytes)
 	if err != nil {
 		println(err.Error())
 		os.Exit(1)
 	}
-	return base64.StdEncoding.EncodeToString(hashr.Sum(cytes))
+	return base64.StdEncoding.EncodeToString(hashr.Sum(nil))
 }
